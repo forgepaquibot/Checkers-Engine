@@ -15,6 +15,8 @@ function drawBoard() {
             squareElement.appendChild(pieceImage);
         }
     }
+
+    mainBoard.squares[8].currentPiece.calculateMoves();
 }
 
 window.addEventListener("DOMContentLoaded", () => {
